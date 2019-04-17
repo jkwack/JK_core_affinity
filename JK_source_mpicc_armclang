@@ -1,0 +1,12 @@
+#!/bin/bash
+module use /soft/compilers/ARM/19.0/opt/arm/modulefiles
+module load ThunderX2CN99/RHEL/7/arm-hpc-compiler-19.0/armpl/19.0.0
+export PATH=/soft/perftools/arm-forge/19.0/bin:$PATH
+export PATH=/soft/perftools/arm-reports/19.0/bin:$PATH
+
+# for MPI
+export PATH=/soft/libraries/mpi/mpich-armcc-3.3b2/bin:$PATH
+export LD_LIBRARY_PATH=/soft/libraries/hpc-x/hpcx-v2.3.0-armcc-MLNX_OFED_LINUX-4.5-1.0.1.0-redhat7.6-aarch64/ucx/lib:$LD_LIBRARY_PATH
+
+
+

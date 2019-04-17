@@ -1,0 +1,12 @@
+#!/bin/bash
+module use /soft/compilers/ARM/19.0/opt/arm/modulefiles
+module load ThunderX2CN99/RHEL/7/arm-hpc-compiler-19.0/armpl/19.0.0
+export PATH=/soft/perftools/arm-forge/19.0/bin:$PATH
+export PATH=/soft/perftools/arm-reports/19.0/bin:$PATH
+which armclang
+
+# for MPI
+export PATH=/soft/libraries/mpi/mvapich2-2.3/arm-19.0/bin:$PATH
+export LD_LIBRARY_PATH=/soft/libraries/mpi/mvapich2-2.3/arm-19.0/lib:$LD_LIBRARY_PATH
+which mpicc
+

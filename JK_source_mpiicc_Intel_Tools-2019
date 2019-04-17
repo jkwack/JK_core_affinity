@@ -1,0 +1,10 @@
+#!/bin/bash
+source /soft/compilers/intel-2019/compilers_and_libraries/linux/bin/compilervars.sh intel64
+source /soft/compilers/intel-2019/compilers_and_libraries/linux/mpi/intel64/bin/mpivars.sh
+source /soft/compilers/intel-2019/advisor_2019/advixe-vars.sh
+source /soft/compilers/intel-2019/vtune_amplifier_2019/amplxe-vars.sh
+which mpiicc
+which advixe-cl
+which amplxe-cl
+
+
